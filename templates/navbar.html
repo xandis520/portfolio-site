@@ -1,0 +1,19 @@
+{% load static %}
+<nav class="top-nav">
+  <label class="logo">
+    <a href="{% url 'home' %}">
+      <img src="{% static 'img/logo.png' %}" alt="logo">
+    </a>
+  </label>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about:about-me' %}">About me</a></li>
+    <li><a href="{% url 'album:portfolio-list' %}">Portfolio</a></li>
+    <li><a href="{% url 'contact:contact-view' %}">Contact</a></li>
+  </ul>
+</nav>

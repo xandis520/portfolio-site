@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+<script>
+  {% block jquery %}
+  var endpoint = '{% url "album:chart-data-example" %}'
+
+  $.ajax({
+    method: "GET",
+    url: endpoint,
+    success: function (data) {
+      labels = data.labels[{{ id }} - 1]
+      defaultData = data.default[{{ id }} - 1]
+      // Wykres funkcji
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            steppedLine: true,
+            label: 'Stock Data',
+            data: defaultData[0],
+          }, {
+            fill: false,
+            // backgroundColor: window.chartColors.blue,
+            borderColor: 'rgba(255, 99, 132, 0.6)',
+            borderWidth: 2,
+            label: 'Decrease trend line',
+            data: defaultData[1],
+          }, {
+            fill: false,
+            // backgroundColor: window.chartColors.blue,
+            borderColor: 'rgba(132, 99, 255, 0.6)',
+            borderWidth: 2,
+            label: 'Increase trend line',
+            data: defaultData[2],
+          }]
+        }
+      })
+    },
+    error: function (error_data) {
+      console.log("error")
+      console.log(error_data)
+    }
+  })
+  {% endblock %}
+</script>
+
+{% block content %}
+<div class="raw-column">
+  <!--#region INSERT -->
+  <div class="line-description" style="margin-top: 0px;">
+    <h1>Insert data {{ id }}</h1>
+  </div>
+  <div class="raw-line-container">
+    <div class="raw-line-container-gallery border">
+      <div class="responsive-2-in-row">
+        <div class="text-1 h-insert">
+          <div class="text-1-name">
+            <p>STOCK DATA</p>
+          </div>
+          <div class="text-1-description">
+            <p>
+              table = {{ data.stock_data }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-2-in-row">
+        <div class="text-1 h-insert">
+          <div class="text-1-name">
+            <p>CALCULATION STEP</p>
+          </div>
+          <div class="text-1-description">
+            <p>
+              k = {{ data.step }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion INSERT -->
+
+  <!--#region Chart -->
+  <div class="line-description">
+    <h1>Chart</h1>
+  </div>
+  <canvas class="canvas" id="myChart" width="400" height="200"></canvas>
+  <!--#endregion Chart -->
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+{% endblock %}

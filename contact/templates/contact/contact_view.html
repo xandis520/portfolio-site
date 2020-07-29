@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="padtop title-contact">Contact Me</h1>
+<div class="contact">
+  <form method="post">
+    {% csrf_token %} {% for field in form %}
+    <div class="field">
+      {{ field }}
+    </div>
+    {% endfor %}
+    <div class="form-actions">
+      <button type="submit" class="button">Send</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

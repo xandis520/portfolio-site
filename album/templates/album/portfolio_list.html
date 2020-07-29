@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="portfolio">
+  <!-- MEDIA -->
+  <div class="responsive">
+    <div class="media-container">
+      <div class="portfolio-media-containter">
+        <a href="{{ github }}" target="_blank">
+          <div class="portfolio-button">
+            <p class="portfolio-title">Github</p>
+            <div class="horizontal-line"></div>
+            <p class="portfolio-description">On github you can see my scripts and whole projects.</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-media-containter">
+        <a href="{{ instagram }}" target="_blank" class="media-link">
+          <div class="portfolio-button">
+            <p class="portfolio-title">Instagram</p>
+            <div class="horizontal-line"></div>
+            <p class="portfolio-description">This is the place, where i post my photography</p>
+          </div>
+        </a>
+      </div>
+      <div class="portfolio-media-containter">
+        <a href="{{ behance }}" target="_blank" class="media-link">
+          <div class="portfolio-button">
+            <p class="portfolio-title">Behance</p>
+            <div class="horizontal-line"></div>
+            <p class="portfolio-description">I upload there my graphic and visualization projects</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="responsive">
+    <div class="portfolio-project-container">
+      <a href="{% url 'album:trend-line' %}">
+        <div class="portfolio-button2">
+          <p class="portfolio-title">Trend line project</p>
+          <div class="horizontal-line"></div>
+          <p class="portfolio-description">
+            This script converts data implemented from the stock market into trendline charts that can be useful for
+            investors.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="portfolio-project-container">
+      <a href="{{ github_website }}" target="_blank" class="media-link">
+        <div class="portfolio-button2">
+          <p class="portfolio-title">This website</p>
+          <div class="horizontal-line"></div>
+          <p class="portfolio-description">
+            Application is made using
+            Python and Django framework.<br>Operating system: Ubuntu<br>Server:
+            Apache with wsgi module </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="portfolio-project-container">
+      <div class="portfolio-button2">
+        <p class="portfolio-title">Future project</p>
+        <div class="horizontal-line"></div>
+        <p class="portfolio-description">This is the place where i will post my future project.</p>
+      </div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="portfolio-project-container">
+      <div class="portfolio-button2">
+        <p class="portfolio-title">Future project</p>
+        <div class="horizontal-line"></div>
+        <p class="portfolio-description">
+          This is the place where i will post my future project. </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

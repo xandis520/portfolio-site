@@ -1,0 +1,516 @@
+/*#region Main Section */
+:root {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  --text-primary: #d8ebb5;
+  --text-secondary: #213322;
+  --bg-primary: #639a67;
+  --bg-secondary: #d8ebb5;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.padtop {
+  padding-top: 120px;
+}
+
+body {
+  margin-top: 0px;
+  background-color: rgb(245, 245, 245);
+}
+
+/* Whole site column whitch contain other components */
+.raw-column {
+  padding-top: 120px;
+  width: 80vw;
+  margin: auto;
+}
+
+.raw-line-container {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.raw-line-container-gallery {
+  width: 100%;
+}
+/*#endregion Main Section */
+
+/*#region Responsive */
+.responsive-photo {
+  margin: 0 2.5%;
+  float: left;
+  width: 24.99999%;
+}
+
+.responsive-description {
+  margin: 0 2.5%;
+  float: left;
+  width: 64.99999%;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive-photo {
+    width: 100%;
+    margin: 25px 0;
+  }
+  .responsive-description {
+    width: 100%;
+    margin: 25px 0;
+  }
+}
+
+.responsive-2-in-row {
+  padding: 0 25px 0 25px;
+  float: left;
+  width: 49.99999%;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive-2-in-row {
+    width: 100%;
+    margin: 25px 0;
+  }
+}
+
+.responsive-3-in-row {
+  padding: 0 25px 0 25px;
+  float: left;
+  width: 33.33333%;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive-3-in-row {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+.responsive-4-in-row {
+  padding: 0 25px 0 25px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive-4-in-row {
+    width: 49.99999%;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-4-in-row {
+    width: 100%;
+    padding: 0px;
+  }
+}
+/*#endregion Responsive */
+
+/*#region Home */
+.main {
+  margin-top: 0px;
+}
+
+.intro {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 100vh;
+  background-color: var(--bg-secondary);
+}
+
+.describe {
+  padding-top: 40vh;
+  padding-left: 10vw;
+  font-size: 18px;
+}
+/*#endregion Home */
+
+/*#region Contact */
+div.contact {
+  border-radius: 20px;
+  padding-top: 20px;
+  padding: 30px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  padding-left: 7px;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}
+
+.email,
+.subject,
+.button {
+  width: 18vw;
+  min-width: 280px;
+  height: 30px;
+}
+
+.message {
+  padding-top: 7px;
+  height: 200px;
+  min-width: 280px;
+}
+
+.email,
+.subject,
+.message {
+  border: 0px;
+  padding-left: 7px;
+  border-radius: 10px;
+  background-color: var(--text-primary);
+  max-width: 75vw;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-secondary);
+}
+
+.button {
+  font-size: 15px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.title-contact {
+  padding-top: 100px;
+  align-content: center;
+  margin-left: 10vw;
+  font-size: 30px;
+  color: var(--text-secondary);
+}
+/*#endregion Contact */
+
+/*#region About me */
+/* Section description Skills/hobby etc. */
+.line-description {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.line-description h1 {
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.big {
+  width: 75%;
+}
+
+.small {
+  width: 25%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.description {
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  padding: 20px 25px;
+}
+
+.description p {
+  display: block;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.photo {
+  border-radius: 20px;
+  width: 100%;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+}
+
+.photo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.about-height {
+  height: 300px;
+}
+
+.job-height {
+  height: 300px;
+}
+
+/* Skills */
+@media only screen and (max-width: 900px) {
+  .photo {
+    height: 80vw;
+  }
+  .description {
+    height: auto;
+  }
+}
+
+.skills {
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills-logo {
+  align-self: center;
+  margin-top: 30px;
+  width: 50%;
+  height: 70px;
+}
+
+.skills-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skills-name {
+  /* margin: auto; */
+  align-self: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+  width: 80%;
+}
+
+.separate-line {
+  margin: auto;
+  margin-top: 10px;
+  height: 2px;
+  width: 30%;
+  background-color: rgb(192, 192, 192);
+}
+
+.skills-description {
+  font-size: 18px;
+  align-self: center;
+  width: 90%;
+  height: 50%;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Hobby */
+.hobby {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hobby-logo {
+  align-self: center;
+  width: 60%;
+  height: auto;
+}
+
+.hobby-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hobby-name {
+  align-self: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+  .hobby-logo {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hobby-logo {
+    width: 40%;
+  }
+}
+
+/* Career objectives */
+.border {
+  border-radius: 20px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+}
+
+.career {
+  height: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 35px;
+}
+
+@media only screen and (max-width: 500px) {
+  .career {
+    height: auto;
+  }
+}
+
+.career-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-name p {
+  margin: 0 10px;
+}
+
+.career-description {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.career-logo {
+  align-self: center;
+  height: 40px;
+}
+
+.career-logo img {
+  display: block; /* remove extra space below image */
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+/*#endregion About me */
+
+/*#region Trend Line */
+.h-insert {
+  height: auto;
+}
+
+.h-outsert {
+  height: auto;
+}
+
+.text-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 35px;
+}
+
+.text-1-name {
+  font-size: 18px;
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-1-name p {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.text-1-description {
+  font-size: 18px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 900px) {
+  .test-1 {
+    padding: 20px 35px;
+  }
+
+  .h-insert {
+    height: auto;
+  }
+
+  .h-outsert {
+    height: auto;
+  }
+}
+
+.example {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.button-example {
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  line-height: 50px;
+  color: black;
+}
+
+.button-example:hover {
+  border: 2px solid var(--bg-primary);
+  background-color: rgb(202, 202, 202);
+  transition: 0.3s;
+  outline: none;
+}
+/*#endregion Trend Line */

@@ -1,0 +1,136 @@
+.portfolio {
+  padding-top: 120px;
+  padding-left: 6vw;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+}
+
+.responsive {
+  float: left;
+}
+
+/* INSTAGRAM, BEHANCE, GITHUB */
+.media-container {
+  width: 24vw;
+  min-width: 300px;
+  margin-left: 4vw;
+  margin-bottom: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-media-containter {
+  margin-bottom: 3vh;
+}
+
+.portfolio-button {
+  text-align: center;
+  height: 22vh;
+  min-height: 128px;  
+  width: 100%;
+  min-width: 300px;
+  border-radius: 20px;
+  color: var(--text-primary);
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+}
+
+/* PROJECTS */
+.portfolio-project-container {
+  margin-left: 4vw;
+  margin-bottom: 6vh;
+}
+
+.portfolio-button2 {
+  border-radius: 20px;
+  color: var(--text-primary);
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  width: 24vw;
+  min-width: 300px;
+  height: 33vh;
+  min-height: 192px;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .media-container,
+  .portfolio-project-container,
+  .portfolio-button,
+  .portfolio-button2 {
+    width: 80vw;
+  }
+}
+
+.portfolio-button:hover,
+.portfolio-button2:hover {
+  background-color: rgb(202, 202, 202);
+  border: 2px solid var(--bg-primary);
+  transition: 0.3s;
+}
+
+/* MEDIA AND PROJECT DESCRIPTION */
+p.portfolio-title {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  color: rgb(31, 31, 31);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.horizontal-line {
+  height: 2px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(224, 224, 224);
+}
+
+p.portfolio-description {
+  padding: 15px 40px 0px 40px;
+  color:  rgb(31, 31, 31);
+  font-size: 18px;
+}
+
+.raw-line {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  color: var(--text-primary);
+  border: 2px solid rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+}
+
+.raw-line div {
+  display: inline-block;
+  line-height: 46px;
+}
+
+.info-left,
+.info-right {
+  width: 25%;
+  height: 100%; 
+  border-radius: 12px;
+  color: var(--text-primary);
+  background-color: rgb(165, 165, 165);
+  text-align: center;
+  color: black;
+  text-transform: uppercase;  
+  letter-spacing: 1px;
+  white-space: nowrap;
+  height: 46px;
+}
+
+.info-right {
+  float: right;
+}
+
+.info-left h2,
+.info-right h2 {
+  font-size: 16px;
+  display: inline-block;
+  line-height: 46px;
+}

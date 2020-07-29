@@ -1,0 +1,229 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<div class="raw-column">
+  <!--#region About me -->
+  <div class="line-description" style="margin-top: 0px;">
+    <h1>About me</h1>
+  </div>
+  <div class="raw-line-container">
+    <div class="raw-line-container-gallery">
+      <div class="responsive-photo">
+        <div class="photo about-height" id="photo">
+          <img src="{% static 'about/img/avatar.png' %}" alt="avatar" />
+        </div>
+      </div>
+      <div class="responsive-description">
+        <div class="description about-height" id="description">
+          <p>
+            Hello. My name is Adrian. I live in Łódź and I enjoy technology.
+            Fascinating to me is that computer science can change our lives. I
+            have started my adventure with python but I am not focused on any
+            programming language. For me programming language is just a tool for
+            creating wonderful things.
+          </p>
+          <p>
+            Until now I have worked on my own projects but I would like to start
+            my adventure with professional programming.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion About me -->
+
+  <!--#region Skills -->
+  <div class="line-description">
+    <h1>Skills</h1>
+  </div>
+  <div class="raw-line-container">
+    <div class="raw-line-container-gallery">
+      <div class="responsive-4-in-row">
+        <div class="skills">
+          <div class="skills-logo">
+            <img src="{% static 'about/img/front_end.png' %}" alt="front_end" />
+          </div>
+          <div class="skills-name">
+            <p>Front End</p>
+            <div class="separate-line"></div>
+          </div>
+          <div class="skills-description">
+            <p>CSS3</p>
+            <p>HTML5</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="skills">
+          <div class="skills-logo">
+            <img src="{% static 'about/img/back_end.png' %}" alt="back_end" />
+          </div>
+          <div class="skills-name">
+            <p>Back End</p>
+            <div class="separate-line"></div>
+          </div>
+          <div class="skills-description">
+            <p>Python</p>
+            <p>Django</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="skills">
+          <div class="skills-logo">
+            <img src="{% static 'about/img/software.png' %}" alt="software" />
+          </div>
+          <div class="skills-name">
+            <p>Software</p>
+            <div class="separate-line"></div>
+          </div>
+          <div class="skills-description">
+            <p>Pycharm</p>
+            <p>Visual Studio Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="skills">
+          <div class="skills-logo">
+            <img src="{% static 'about/img/deployment.png' %}" alt="deployment" />
+          </div>
+          <div class="skills-name">
+            <p>Deployment</p>
+            <div class="separate-line"></div>
+          </div>
+          <div class="skills-description">
+            <p>Github</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion Skills -->
+
+  <!--#region Hobby -->
+  <div class="line-description">
+    <h1>My free time activities</h1>
+  </div>
+  <div class="raw-line-container">
+    <div class="raw-line-container-gallery">
+      <div class="responsive-4-in-row">
+        <div class="hobby">
+          <div class="hobby-logo">
+            <img src="{% static 'about/img/photography.png' %}" alt="Photography" />
+          </div>
+          <div class="hobby-name">
+            <p>Photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="hobby">
+          <div class="hobby-logo">
+            <img src="{% static 'about/img/tenis.png' %}" alt="tenis" />
+          </div>
+          <div class="hobby-name">
+            <p>Tenis</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="hobby">
+          <div class="hobby-logo">
+            <img src="{% static 'about/img/watercolour.png' %}" alt="watercolour" />
+          </div>
+          <div class="hobby-name">
+            <p>Watercolour painting</p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-4-in-row">
+        <div class="hobby">
+          <div class="hobby-logo">
+            <img src="{% static 'about/img/high_tech.png' %}" alt="high_tech" />
+          </div>
+          <div class="hobby-name">
+            <p>High-Tech Architecture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion Hobby -->
+
+  <!--#region Future areas-->
+  <div class="line-description">
+    <h1>Future areas</h1>
+  </div>
+  <div class="raw-line-container" style="margin-bottom: 50px;">
+    <div class="raw-line-container-gallery border">
+      <div class="responsive-2-in-row">
+        <div class="career">
+          <div class="career-name">
+            <div class="career-logo">
+              <img src="{% static 'about/img/database.png' %}" alt="Database" />
+            </div>
+            <p>Database</p>
+          </div>
+          <div class="career-description">
+            <p>
+              Database management systems are divided into types. The most popular is the relational database model.
+              This is where the data of web applications are most often based. Their records contain such data as:
+              passwords, logins. To keep the data safe, modern cryptographic methods are used for this.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-2-in-row">
+        <div class="career">
+          <div class="career-name">
+            <div class="career-logo">
+              <img src="{% static 'about/img/artificial_inteligence.png' %}" alt="artificial_inteligence" />
+            </div>
+            <p>Artificial inteligence</p>
+          </div>
+          <div class="career-description">
+            <p>
+              This is a fairly new field of technology. It deals with sectors such as neural networks and machine
+              learning. There are many methods of machine learning, but the main point is that the machine learns to
+              solve a given problem by itself. The neural network allows them to do so.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-2-in-row">
+        <div class="career">
+          <div class="career-name">
+            <div class="career-logo">
+              <img src="{% static 'about/img/raspberry.png' %}" alt="Microcontrolers" />
+            </div>
+            <p>Microcontrolers</p>
+          </div>
+          <div class="career-description">
+            <p>
+              Printed boards are responsible for controlling many devices in our environment. Ranging from ordinary
+              bicycle lights to smart home management systems. One of the more advanced boards is the Raspberry Pi, on
+              which I would like to program an automatic garden care system one day.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-2-in-row">
+        <div class="career">
+          <div class="career-name">
+            <div class="career-logo">
+              <img src="{% static 'about/img/web_app.png' %}" alt="Web_application" />
+            </div>
+            <p>Web application</p>
+          </div>
+          <div class="career-description">
+            <p>
+              It can be said with certainty that Web applications has revolutionized the world. They allow easy access
+              to data stored on the server. Thanks to this, we can use the same functionalities on different devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--#endregion Future areas-->
+</div>
+{% endblock %}
